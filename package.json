@@ -77,7 +77,7 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "deploy-storybook": "storybook-to-ghpages",
-        "deploy-storybook:ci": "storybook-to-ghpages --ci --out \"./public/storybook/\""
+        "deploy-storybook:ci": "storybook-to-ghpages --ci"
     },
     "plugins": [
         [
@@ -91,7 +91,7 @@
         "type": "git",
         "url": "git+https://github.com/vasilvestre/vasilvestre.github.io.git"
     },
-    "author": "",
+    "author": "vasilvestre",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/vasilvestre/vasilvestre.github.io/issues"
@@ -101,6 +101,6 @@
         "pre-commit": "npx lint-staged"
     },
     "lint-staged": {
-        "*.{js,css,md}": "prettier --write"
+        "*.{js,css,md,mdx,jsx,scss}": "prettier --write"
     }
 }
