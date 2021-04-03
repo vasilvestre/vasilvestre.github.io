@@ -1,15 +1,13 @@
-name: Build and deploy site
+name: CI
 
 on:
     push:
         branches:
             - main
-
-    # Allows you to run this workflow manually from the Actions tab
-    workflow_dispatch:
+    pull_request: ~
 
 jobs:
-    build-and-deploy:
+    lint:
         runs-on: ubuntu-latest
 
         steps:
@@ -31,15 +29,7 @@ jobs:
                       ${{ runner.os }}-build-
                       ${{ runner.os }}-
 
-            - name: Install and Build 🔧
+            - name: Install and check style 🔧
               run: |
                   npm install
-                  npm run build
-                  npm run build-storybook
-
-            - name: Deploy on GitHub Pages 🚀
-              uses: crazy-max/ghaction-github-pages@v2.3.0
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  build_dir: public/
+                  npm run lint:ci
