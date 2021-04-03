@@ -1,0 +1,47 @@
+/* fontawesome. */
+@import 'variables';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+/* end fontawesome. */
+
+/* tailwindcss. */
+@import '../node_modules/tailwindcss/base.css';
+@import '../node_modules/tailwindcss/components.css';
+@import '../node_modules/tailwindcss/utilities.css';
+/* end tailwindcss. */
+
+/* Custom, mostly to handle api html returned */
+body {
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: rgb(98, 36, 241);
+    background: $linear-bg;
+    font: $fa-font-path;
+}
+
+pre {
+    background: #141518;
+    padding: 1vh;
+    border: #fbfaff solid 2px;
+    border-radius: 0.375rem;
+    text-decoration-color: black;
+}
+
+.hljs-title {
+    color: #8f9ba6;
+}
+
+.hljs-keyword {
+    color: #bf7029;
+}
+
+.hljs-variable {
+    color: #7c7385;
+}
+
+.hljs-function {
+    color: #9ea26b;
+}
+
+.hljs-string {
+    color: #62655c;
+}
