@@ -1,10 +1,6 @@
-# Monofony official website
+# vsilvestre.github.com
 
-This is a simple repository for the website dedicated to Monofony.
-
-## Why?
-
-OSS FTW \o/
+This is a simple repository for my website.
 
 ## Installation
 
@@ -30,14 +26,6 @@ All invalid options are silently ignored!
 
 See the [CONTRIBUTING](.github/CONTRIBUTING.md) file.
 
-## Code of conduct
-
-Be nice and take a look on our [CODE OF CONDUCT](.github/CODE_OF_CONDUCT.md).
-
-## Support
-
-This project is open source and this is our [support rules](.github/SUPPORT.md).
-
 ## License
 
 This project is licensed under MIT.
@@ -45,4 +33,4 @@ This project is licensed under MIT.
 ## Credits
 
 Created by [Amélia MASSOT](https://github.com/Zveltana).
-See also the [thank you](.github/thank-you.md).
+See also the [thank-you](.github/thank-you.md).
