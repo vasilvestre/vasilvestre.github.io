@@ -5,14 +5,16 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
       - name: Install node
         uses: actions/setup-node@v3
@@ -23,11 +25,8 @@ jobs:
         run: |
           npm install
           npm run build
-          npx prettier --parser html --write ./public/*.html
 
-      - name: Push changes
-        uses: ptienchuan/deploy-github-pages-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          source-directory: "public"
+          folder: public
