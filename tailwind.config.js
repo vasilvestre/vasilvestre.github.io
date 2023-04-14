@@ -23,7 +23,7 @@ module.exports = {
         'dark-blue': '#1C4952',
       },
       backgroundImage: {
-        what: "url('./images/texture-what.jpg')",
+        what: "url('./images/texture-what.webp')",
       }
     },
   },
