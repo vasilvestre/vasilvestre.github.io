@@ -1,0 +1,20 @@
+{
+  "build/front/app.css": "/build/front/app.css",
+  "build/front/app.js": "/build/front/app.js",
+  "build/front/runtime.js": "/build/front/runtime.js",
+  "build/front/images/portrait-valentin.webp": "/build/front/images/portrait-valentin.webp",
+  "build/front/images/valentin-contact.webp": "/build/front/images/valentin-contact.webp",
+  "build/front/images/sylius-icon.svg": "/build/front/images/sylius-icon.svg",
+  "build/front/images/texture-what.webp": "/build/front/images/texture-what.webp",
+  "build/front/images/symfony-text.svg": "/build/front/images/symfony-text.svg",
+  "build/front/images/favicon.ico": "/build/front/images/favicon.ico",
+  "build/front/images/sylius.svg": "/build/front/images/sylius.svg",
+  "build/front/images/php.svg": "/build/front/images/php.svg",
+  "build/front/images/symfony.svg": "/build/front/images/symfony.svg",
+  "build/front/images/bob.svg": "/build/front/images/bob.svg",
+  "build/front/images/separateur.svg": "/build/front/images/separateur.svg",
+  "build/front/images/php-text.svg": "/build/front/images/php-text.svg",
+  "build/front/images/linkedin.svg": "/build/front/images/linkedin.svg",
+  "build/front/images/wave.svg": "/build/front/images/wave.svg",
+  "build/front/images/wave-reverse.svg": "/build/front/images/wave-reverse.svg"
+}
