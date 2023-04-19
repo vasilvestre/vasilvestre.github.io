@@ -26,6 +26,16 @@ export default function RootLayout({
       <body>
       {children}
       <Script src={"https://analytics.umami.is/script.js"} data-website-id="8145cb5c-dd40-41d9-a175-a89c3a233ec0" async={true}></Script>
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-H6N73DP229"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-H6N73DP229');
+        `}
+      </Script>
       <footer className="bg-beige">
         <div className="max-w-7xl mx-auto py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-3">
