@@ -10,16 +10,8 @@ This is a simple repository for my website.
 ## Usage
 
 ```
-./configure --help
-usage: ./configure [options]
-
-options:
-  --env=<env>: current env (dev|labo|prod)
-  --with-docker: enable docker
-  --with-proxy: add proxy to docker
-  --clean-before-tasks: remove build files
-
-All invalid options are silently ignored!
+npm i
+npm run dev
 ```
 
 ## Contributing

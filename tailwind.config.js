@@ -1,9 +1,11 @@
-const Encore = require('@symfony/webpack-encore');
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './public/**/*.html',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -23,16 +25,13 @@ module.exports = {
         'dark-blue': '#1C4952',
       },
       backgroundImage: {
-        what: "url('./images/texture-what.webp')",
-      }
+        what: "url('../app/assets/images/texture-what.webp')",
+      },
     },
   },
-  variants: {},
-  corePlugins: {},
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
   ],
-  purge: Encore.isProduction(),
 }
