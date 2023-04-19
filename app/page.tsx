@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import profilePic from './assets/images/portrait-valentin.webp';
-import contactPic from './assets/images/valentin-contact.webp';
-import littleBobPic from './assets/images/bob.svg';
-import phpTextSvg from './assets/images/php-text.svg';
-import symfonyTextSvg from './assets/images/symfony-text.svg';
-import syliusIconSvg from './assets/images/sylius-icon.svg';
+import profilePic from '/public/assets/images/portrait-valentin.webp';
+import contactPic from '/public/assets/images/valentin-contact.webp';
+import littleBobPic from '/public/assets/images/bob.svg';
+import phpTextSvg from '/public/assets/images/php-text.svg';
+import symfonyTextSvg from '/public/assets/images/symfony-text.svg';
+import syliusIconSvg from '/public/assets/images/sylius-icon.svg';
 
 import { Inter } from 'next/font/google'
 

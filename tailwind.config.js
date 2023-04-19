@@ -25,7 +25,7 @@ module.exports = {
         'dark-blue': '#1C4952',
       },
       backgroundImage: {
-        what: "url('../app/assets/images/texture-what.webp')",
+        what: "url('../public/assets/images/texture-what.webp')",
       },
     },
   },
