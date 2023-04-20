@@ -18,7 +18,7 @@ export default function Page() {
         <section className="pt-10 mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <h1 className="text-beige font-black text-4xl md:text-3xl">Credits</h1>
           <div className="mt-6 text-xl text-light-green">
-              <p>Valentin SILVESTRE&apos;s website is available at valentin.silvestre.com and was designed and developed by Amélia MASSOT.</p>
+              <p>Valentin SILVESTRE&apos;s website is available at vasilvestre.github.io and was designed and developed by Amélia MASSOT.</p>
               <p>This website was created as part of Amélia MASSOT&apos;s web design and web development skills within the company AKAWAKA, her employer.</p>
               <p>The content of the site was written by Valentin SILVESTRE, who is the owner of the site.</p>
           </div>
