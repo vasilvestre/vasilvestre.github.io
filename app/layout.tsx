@@ -59,7 +59,7 @@ export default function RootLayout({
           </div>
 
           <div className="mt-8 text-center md:mt-0 md:order-1">
-            <Link href={'/legal'} className="relative z-10 text-base text-green-tree hover:text-dark-blue">Informations légales</Link>
+            <Link href={'/legal'} className="relative z-10 text-base text-green-tree hover:text-dark-blue">Legal Informations</Link>
           </div>
 
           <div className="mt-8 md:mt-0 md:order-2">
