@@ -1,6 +1,7 @@
 import './globals.css'
 import Link from "next/link";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Valentin SILVESTRE',
@@ -66,6 +67,7 @@ export default function RootLayout({
             <p className="text-center text-base text-green-tree">&copy; 2023 Valentin SILVESTRE.</p>
           </div>
         </div>
+        <Analytics />
       </footer>
       </body>
     </html>
