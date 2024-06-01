@@ -4,9 +4,10 @@ import contactPic from '/public/assets/images/valentin-contact.webp';
 import littleBobPic from '/public/assets/images/bob.svg';
 import phpTextSvg from '/public/assets/images/php-text.svg';
 import symfonyTextSvg from '/public/assets/images/symfony-text.svg';
-import syliusIconSvg from '/public/assets/images/sylius-icon.svg';
+import syliusIconSvg from '/public/assets/images/sylius-icon-white.svg';
 
 import { Inter } from 'next/font/google'
+import ExportedImage from "next-image-export-optimizer";
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
             <div className="text-center lg:text-left">
               <div className="sm:max-w-xl">
                 <div className="flex gap-x-3 justify-center lg:justify-start">
-                  <Image
+                  <ExportedImage
                       src={littleBobPic}
                       alt=""
                       className="w-10 h-full hidden md:block"
@@ -34,11 +35,14 @@ export default function Home() {
               </div>
               <div className="mt-12 flex justify-center lg:justify-start">
                 <a href="#contact"
-                   className="text-center block w-2/4 rounded-br-2xl rounded-tl-2xl border border-transparent px-5 py-3 bg-beige hover:text-dark-blue text-base font-medium text-green-tree shadow hover:text-dark-blue focus:border-2 focus:border-beige sm:px-10">Contact
+                   className="
+                   text-center block w-2/4 rounded-br-2xl rounded-tl-2xl border border-transparent px-5 py-3 bg-beige
+                   text-base text-green-tree shadow hover:text-beige hover:bg-green-tree focus:border-2 focus:border-beige sm:px-10 font-semibold
+                   ">Contact
                   me !</a>
               </div>
             </div>
-            <Image
+            <ExportedImage
                 src={profilePic}
                 alt="photo de valentin silvestre"
                 className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
@@ -51,12 +55,10 @@ export default function Home() {
         <div
             className="mx-auto flex flex-col items-center justify-center inset-0 max-w-md px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
           <h1 className="mt-2 font-extrabold tracking-tight text-dark-blue text-4xl md:text-3xl">Who is Valentin ?</h1>
-          <p className="mx-auto mt-5 max-w-prose text-xl text-blue">
-              <span>
-                  I attended the University Catholique de Lille in France and earned a Master&apos;s degree in Computer Science.
-                  Following that, I have worked as a Symfony developer in various companies, with a focus on e-commerce, B2C, and B2B industries.
-                  Currently, I am employed by Akawaka as a Sylius developer.
-              </span>
+          <p className="mx-auto mt-5 max-w-[45ch] text-xl text-blue text-left">
+              I attended the University Catholique de Lille in France and earned a Master&apos;s degree in Computer Science.
+              Following that, I have worked as a Symfony developer in various companies, with a focus on e-commerce, B2C, and B2B industries.
+              Currently, I am employed by Akawaka as a Sylius developer.
           </p>
         </div>
       </section>
@@ -73,7 +75,7 @@ export default function Home() {
                     <div className="-mt-6">
                       <div
                           className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <Image
+                        <ExportedImage
                             src={phpTextSvg}
                             alt="PHP logo"
                             className="h-10 w-10"
@@ -82,7 +84,7 @@ export default function Home() {
                         />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">PHP</h2>
-                      <p className="mt-5 text-base text-blue">
+                      <p className="mt-5 text-base text-blue font-semibold">
                         The undying technology that I&apos;ve been using since 15 years old.
                       </p>
                     </div>
@@ -94,7 +96,7 @@ export default function Home() {
                     <div className="-mt-6">
                       <div
                           className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                          <Image
+                          <ExportedImage
                               src={symfonyTextSvg}
                               alt="Symfony logo"
                               className="h-10 w-10"
@@ -103,7 +105,7 @@ export default function Home() {
                           />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h2>
-                      <p className="mt-5 text-base text-blue">
+                      <p className="mt-5 text-base text-blue font-semibold">
                         Since 2016 I have been working with Symfony. I also made a few contributions to the framework.
                       </p>
                     </div>
@@ -115,16 +117,14 @@ export default function Home() {
                     <div className="-mt-6">
                       <div
                           className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                          <Image
+                          <ExportedImage
                               src={syliusIconSvg}
                               alt="Sylius logo"
-                              className="h-10 w-10"
-                              width={10}
-                              height={10}
+                              className="h-10 w-fit"
                           />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Sylius</h2>
-                      <p className="mt-5 text-base text-blue">
+                      <p className="mt-5 text-base text-blue font-semibold">
                         Top e-commerce framework for Symfony. I have been working with Sylius since 2019 on various
                         projects.
                       </p>
@@ -142,7 +142,7 @@ export default function Home() {
           <div className="px-6 xl:px-10 rounded-lg text-center relative">
             <div
                 className="mx-auto max-w-md sm:max-w-3xl items-center lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-9 xl:gap-48">
-              <Image
+              <ExportedImage
                     src={contactPic}
                     alt="pic of me pointing the camera with my fingers"
                     className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
@@ -201,17 +201,17 @@ export default function Home() {
                         <g id="SVGRepo_tracerCarrierCV" strokeLinecap="round" strokeLinejoin="round"
                            strokeWidth="0"></g>
                         <path
-                            d="M9.29289 1.29289C9.48043 1.10536 9.73478 1 10 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V8C3 7.73478 3.10536 7.48043 3.29289 7.29289L9.29289 1.29289ZM18 3H11V8C11 8.55228 10.5523 9 10 9H5V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V4C19 3.44772 18.5523 3 18 3ZM6.41421 7H9V4.41421L6.41421 7ZM7 13C7 12.4477 7.44772 12 8 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8C7.44772 14 7 13.5523 7 13ZM7 17C7 16.4477 7.44772 16 8 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H8C7.44772 18 7 17.5523 7 17Z"></path>
-                      </svg>
+                            d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-3 17h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/>
+                    </svg>
 
-                      <p>OpenResume</p>
-                    </a>
-                  </div>
+                    <p>OpenResume</p>
+                  </a>
                 </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  )
+      </div>
+    </section>
+</main>
+)
 }
