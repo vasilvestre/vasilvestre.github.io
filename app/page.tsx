@@ -1,16 +1,12 @@
-import Image from "next/image";
 import profilePic from "/public/assets/images/portrait-valentin.webp";
 import contactPic from "/public/assets/images/valentin-contact.webp";
 import littleBobPic from "/public/assets/images/bob.svg";
 import phpTextSvg from "/public/assets/images/php-text.svg";
 import symfonyTextSvg from "/public/assets/images/symfony-text.svg";
 import syliusIconSvg from "/public/assets/images/sylius-icon-white.svg";
-import afupHautDeFranceSvg from "/public/assets/images/afup-hauts-de-france.svg";
-import afupDayLille2024Svg from "/public/assets/images/afup-day-2024-lille.svg";
 
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
-import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
@@ -24,7 +20,7 @@ export default function Home() {
                 <div className="flex gap-x-3 justify-center lg:justify-start">
                   <ExportedImage
                     src={littleBobPic}
-                    alt=""
+                    alt="bob hat logo that illustrate my profile picture"
                     className="w-10 h-full hidden md:block"
                     priority
                     width={40}
@@ -51,6 +47,8 @@ export default function Home() {
             <ExportedImage
               src={profilePic}
               alt="photo de valentin silvestre"
+              height={profilePic.height}
+              width={profilePic.width}
               className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
               priority
             />
@@ -59,7 +57,7 @@ export default function Home() {
       </section>
       <section className="relative bg-beige py-16 sm:py-24 lg:py-24">
         <div className="mx-auto flex flex-col items-center justify-center inset-0 max-w-md px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
-          <h1 className="mt-2 font-extrabold tracking-tight text-dark-blue text-4xl md:text-3xl">Who is Valentin ?</h1>
+          <h2 className="mt-2 font-extrabold tracking-tight text-dark-blue text-4xl md:text-3xl">Who is Valentin ?</h2>
           <p className="mx-auto mt-5 max-w-[45ch] text-xl text-blue text-left">
             I attended the University Catholique de Lille in France and earned a Master&apos;s degree in Computer
             Science. Following that, I have worked as a Symfony developer in various companies, with a focus on
@@ -71,9 +69,9 @@ export default function Home() {
       <section className="bg-what bg-no-repeat bg-cover bg-fixed">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-32 sm:px-6 lg:px-8">
           <div className="bg-beige/50 p-20 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl">
-            <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-dark-blue md:text-3xl">
+            <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-dark-blue md:text-3xl">
               What does Valentin do ?
-            </h1>
+            </h2>
             <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">Technologies</h2>
             <div className="mt-4">
               <div className="flex gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -81,7 +79,14 @@ export default function Home() {
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
                       <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <ExportedImage src={phpTextSvg} alt="PHP logo" className="h-10 w-10" width={10} height={10} />
+                        <ExportedImage
+                          src={phpTextSvg}
+                          alt="PHP logo"
+                          placeholder={null}
+                          className="h-10 w-10"
+                          width={10}
+                          height={10}
+                        />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">PHP</h2>
                       <p className="mt-5 text-base text-blue font-semibold">
@@ -101,6 +106,7 @@ export default function Home() {
                           className="h-10 w-10"
                           width={10}
                           height={10}
+                          placeholder={null}
                         />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h2>
@@ -141,7 +147,7 @@ export default function Home() {
                 className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
               />
               <div className="mt-12 lg:mt-0">
-                <h1 className="text-4xl font-extrabold text-beige md:text-3xl">Contact Me !</h1>
+                <h2 className="text-4xl font-extrabold text-beige md:text-3xl">Contact Me !</h2>
 
                 <div className="mt-12">
                   <p className="mb-6 text-base text-beige">

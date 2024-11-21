@@ -1,19 +1,33 @@
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
+import profilePic from "/public/assets/images/portrait-valentin.webp";
 
 export const metadata = {
-  title: "Valentin SILVESTRE",
-  description: "Symfony & Sylius developer, working from France. Interested in quality, open source & mulet.",
+  title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+  description:
+    "Symfony & Sylius developer in France, passionate about quality, open source, and mules. Currently employed at Akawaka. French using English content.",
   keywords:
     "Symfony, Sylius, PHP, Developer, Freelance, France, Lille, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
   openGraph: {
     url: "https://vasilvestre.github.io/",
     type: "website",
-    title: "Valentin SILVESTRE",
+    title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+    images: [
+      {
+        url: profilePic.src,
+        width: profilePic.width,
+        height: profilePic.height,
+      },
+    ],
+    locale: "en_US",
   },
   icons: {
     icon: "/favicon.ico",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
