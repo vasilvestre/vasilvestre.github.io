@@ -7,11 +7,35 @@ import syliusIconSvg from "/public/assets/images/sylius-icon-white.svg";
 
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
+import { metadata } from "@/app/layout";
 
 const inter = Inter({ subsets: ["latin"] });
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: metadata.title,
+  description: metadata.description,
+  author: {
+    "@type": "Person",
+    name: "Valentin Silvestre",
+    url: "https://vasilvestre.github.io/",
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vasilvestre.github.io/",
+      },
+    ],
+  },
+};
 export default function Home() {
   return (
     <main className="bg-inherit">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="relative bg-gradient-to-b from-green-tree to-blue">
         <div className="overflow-hidden lg:relative py-12 lg:py-24">
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 gap-y-12 flex flex-wrap justify-center items-center">
@@ -161,6 +185,7 @@ export default function Home() {
                     href="https://github.com/vasilvestre/"
                     className="flex gap-x-2 justify-center text-beige"
                     target="_blank"
+                    rel={"noopener"}
                   >
                     <span className="sr-only">GitHub</span>
                     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -178,6 +203,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/v-silvestre/"
                     className="flex gap-x-2 justify-center text-beige"
                     target="_blank"
+                    rel={"noopener"}
                   >
                     <span className="sr-only">Linkedin</span>
                     <svg
@@ -203,6 +229,7 @@ export default function Home() {
                     href="https://twitter.com/ValentinSilves"
                     className="flex gap-x-2 justify-center text-beige"
                     target="_blank"
+                    rel={"noopener"}
                   >
                     <span className="sr-only">Twitter</span>
                     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -216,6 +243,7 @@ export default function Home() {
                     href="https://registry.jsonresume.org/vasilvestre"
                     className="flex gap-x-2 justify-center text-beige"
                     target="_blank"
+                    rel={"noopener"}
                   >
                     <span className="sr-only">CV</span>
                     <svg fill="currentColor" className="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

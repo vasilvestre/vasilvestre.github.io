@@ -6,7 +6,7 @@ import profilePic from "/public/assets/images/portrait-valentin.webp";
 export const metadata = {
   title: "Valentin SILVESTRE - Symfony & Sylius Developer",
   description:
-    "Symfony & Sylius developer in France, passionate about quality, open source, and mules. Currently employed at Akawaka. French using English content.",
+    "Symfony & Sylius developer in France, passionate about quality, open source, and cool mulets. Currently employed at Akawaka.",
   keywords:
     "Symfony, Sylius, PHP, Developer, Freelance, France, Lille, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
   openGraph: {
