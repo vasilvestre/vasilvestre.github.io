@@ -200,7 +200,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/v-silvestre/"
+                    href="https://www.linkedin.com/in/valentin-silvestre-dev/"
                     className="flex gap-x-2 justify-center text-beige"
                     target="_blank"
                     rel={"noopener"}
