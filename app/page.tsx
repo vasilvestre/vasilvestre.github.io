@@ -7,9 +7,34 @@ import syliusIconSvg from "/public/assets/images/sylius-icon-white.svg";
 
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
-import { metadata } from "@/app/layout";
+import {baseMetadata} from "@/app/shared-metadata";
 
 const inter = Inter({ subsets: ["latin"] });
+export const metadata = {
+  ...baseMetadata,
+  title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+  description:
+    "Symfony & Sylius developer in France, passionate about quality, open source, and cool mulets. Currently employed at Akawaka.",
+  keywords:
+    "Symfony, Sylius, PHP, Developer, Freelance, France, Lille, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
+  openGraph: {
+    url: "https://vasilvestre.github.io/",
+    type: "website",
+    title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+    images: [
+      {
+        url: profilePic.src,
+        width: profilePic.width,
+        height: profilePic.height,
+      },
+    ],
+    locale: "en_US",
+  },
+  alternates: {
+    canonical: '/',
+  },
+}
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",

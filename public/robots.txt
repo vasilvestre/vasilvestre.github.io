@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /_next/
+Disallow: /*.webp$
+Disallow: /*.ico$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+
+# Allow all crawlers
+User-agent: *
+Allow: /
