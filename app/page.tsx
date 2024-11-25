@@ -7,7 +7,7 @@ import syliusIconSvg from "/public/assets/images/sylius-icon-white.svg";
 
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
-import {baseMetadata} from "@/app/shared-metadata";
+import { baseMetadata } from "@/app/shared-metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -31,9 +31,9 @@ export const metadata = {
     locale: "en_US",
   },
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
-}
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
