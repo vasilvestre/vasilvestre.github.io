@@ -182,6 +182,71 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">Conferences</h2>
+            <div className="mt-4">
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="pt-6 flex-row">
+                  <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        <ExportedImage
+                          src={phpTextSvg}
+                          alt="PHP logo"
+                          placeholder={null}
+                          className="h-10 w-10"
+                          width={10}
+                          height={10}
+                        />
+                      </div>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">The State of PHP Profilers in 2024</h2>
+                      <p className="mt-5 text-base text-blue font-semibold">
+                        On May 2024, I presented at a local meetup in Lille on the topic of "The State of PHP Profilers in 2024". 
+                        This presentation explored the landscape of PHP profiling tools, with a focus on open-source solutions.  
+                        Attendees gained insights into the capabilities, limitations, and use cases of different profilers, enabling them to make informed decisions for optimizing their PHP applications.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 flex-row">
+                  <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        <ExportedImage
+                          src={symfonyTextSvg}
+                          alt="Symfony logo"
+                          className="h-10 w-10"
+                          width={10}
+                          height={10}
+                          placeholder={null}
+                        />
+                      </div>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Creating Expressive Fixtures with Foundry</h2>
+                      <p className="mt-5 text-base text-blue font-semibold">
+                        On June 2023, I delivered a talk at a Lille meetup focused on "Creating Expressive Fixtures with Foundry." 
+                        This presentation explored Foundry's capabilities for streamlining fixture creation within Symfony projects, enabling developers to generate realistic and meaningful test data with ease.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 flex-row">
+                  <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        <ExportedImage src={syliusIconSvg} alt="Sylius logo" className="h-10 w-fit" />
+                      </div>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">How to properly extend Sylius API at 1.12</h2>
+                      <p className="mt-5 text-base text-blue font-semibold">
+                        In September 2022, I had the opportunity to present at a tech meetup in Lille on the topic of extending Sylius with API Platform.
+                        Attendees learned about customizing API endpoints, creating new API resources, and implementing advanced techniques for extending both Sylius and the API Platform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
