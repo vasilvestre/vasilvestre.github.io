@@ -198,11 +198,15 @@ export default function Home() {
                           height={10}
                         />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">The State of PHP Profilers in 2024</h2>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                        The State of PHP Profilers in 2024
+                      </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        On May 2024, I presented at a local meetup in Lille on the topic of "The State of PHP Profilers in 2024". 
-                        This presentation explored the landscape of PHP profiling tools, with a focus on open-source solutions.  
-                        Attendees gained insights into the capabilities, limitations, and use cases of different profilers, enabling them to make informed decisions for optimizing their PHP applications.
+                        On May 2024, I presented at a local meetup in Lille on the topic of "The State of PHP Profilers
+                        in 2024". This presentation explored the landscape of PHP profiling tools, with a focus on
+                        open-source solutions. Attendees gained insights into the capabilities, limitations, and use
+                        cases of different profilers, enabling them to make informed decisions for optimizing their PHP
+                        applications.
                       </p>
                     </div>
                   </div>
@@ -221,10 +225,14 @@ export default function Home() {
                           placeholder={null}
                         />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Creating Expressive Fixtures with Foundry</h2>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                        Creating Expressive Fixtures with Foundry
+                      </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        On June 2023, I delivered a talk at a Lille meetup focused on "Creating Expressive Fixtures with Foundry." 
-                        This presentation explored Foundry's capabilities for streamlining fixture creation within Symfony projects, enabling developers to generate realistic and meaningful test data with ease.
+                        On June 2023, I delivered a talk at a Lille meetup focused on "Creating Expressive Fixtures with
+                        Foundry." This presentation explored Foundry's capabilities for streamlining fixture creation
+                        within Symfony projects, enabling developers to generate realistic and meaningful test data with
+                        ease.
                       </p>
                     </div>
                   </div>
@@ -236,17 +244,20 @@ export default function Home() {
                       <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage src={syliusIconSvg} alt="Sylius logo" className="h-10 w-fit" />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">How to properly extend Sylius API at 1.12</h2>
+                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                        How to properly extend Sylius API at 1.12
+                      </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        In September 2022, I had the opportunity to present at a tech meetup in Lille on the topic of extending Sylius with API Platform.
-                        Attendees learned about customizing API endpoints, creating new API resources, and implementing advanced techniques for extending both Sylius and the API Platform.
+                        In September 2022, I had the opportunity to present at a tech meetup in Lille on the topic of
+                        extending Sylius with API Platform. Attendees learned about customizing API endpoints, creating
+                        new API resources, and implementing advanced techniques for extending both Sylius and the API
+                        Platform.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
