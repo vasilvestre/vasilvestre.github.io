@@ -8,6 +8,7 @@ import syliusIconSvg from "/public/assets/images/sylius-icon-white.svg";
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
 import { baseMetadata } from "@/app/shared-metadata";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -188,25 +189,16 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <ExportedImage
-                          src={phpTextSvg}
-                          alt="PHP logo"
-                          placeholder={null}
-                          className="h-10 w-10"
-                          width={10}
-                          height={10}
-                        />
+                      <div className="inline-flex items-center justify-center text-white rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        May 2024 - AFUP Day Lille
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         The State of PHP Profilers in 2024
                       </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        On May 2024, I presented at a local meetup in Lille on the topic of "The State of PHP Profilers
-                        in 2024". This presentation explored the landscape of PHP profiling tools, with a focus on
-                        open-source solutions. Attendees gained insights into the capabilities, limitations, and use
-                        cases of different profilers, enabling them to make informed decisions for optimizing their PHP
-                        applications.
+                        <Link href={"https://vasilvestre.github.io/profiler-slides/1"} target={"_blank"}>
+                          Find my slides here.
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -215,24 +207,16 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <ExportedImage
-                          src={symfonyTextSvg}
-                          alt="Symfony logo"
-                          className="h-10 w-10"
-                          width={10}
-                          height={10}
-                          placeholder={null}
-                        />
+                      <div className="inline-flex items-center text-white justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        June 2023 - Lille Symfony Meetup
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         Creating Expressive Fixtures with Foundry
                       </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        On June 2023, I delivered a talk at a Lille meetup focused on "Creating Expressive Fixtures with
-                        Foundry." This presentation explored Foundry's capabilities for streamlining fixture creation
-                        within Symfony projects, enabling developers to generate realistic and meaningful test data with
-                        ease.
+                        <Link href={"https://vasilvestre.github.io/foundry-slides/1"} target={"_blank"}>
+                          Find my slides here.
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -241,17 +225,16 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <ExportedImage src={syliusIconSvg} alt="Sylius logo" className="h-10 w-fit" />
+                      <div className="inline-flex items-center text-white justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                        September 2022 - Lille Tech Meetup
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         How to properly extend Sylius API at 1.12
                       </h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        In September 2022, I had the opportunity to present at a tech meetup in Lille on the topic of
-                        extending Sylius with API Platform. Attendees learned about customizing API endpoints, creating
-                        new API resources, and implementing advanced techniques for extending both Sylius and the API
-                        Platform.
+                        <Link href={"https://vasilvestre.github.io/extending-sylius-1.12-09-22/1"} target={"_blank"}>
+                          Find my slides here.
+                        </Link>
                       </p>
                     </div>
                   </div>
