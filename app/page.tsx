@@ -123,7 +123,7 @@ export default function Home() {
             </h2>
             <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">Technologies</h2>
             <div className="mt-4">
-              <div className="flex gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
