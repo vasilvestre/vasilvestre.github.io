@@ -68,13 +68,8 @@ const jsonLd = {
     "https://bsky.app/profile/vasilvestre.bsky.social",
   ],
   description:
-    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.", // Updated description
-  hasOccupation: {
-    "@type": "Occupation",
-    name: "Symfony & Sylius Developer",
-    skills:
-      "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B", // Expanded and refined skills list
-  },
+    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.",
+  skills: "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B",
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "Master's Degree in Computer Science",
