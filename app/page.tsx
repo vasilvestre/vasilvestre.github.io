@@ -22,7 +22,8 @@ export const metadata = {
     url: "https://vasilvestre.github.io/",
     type: "website",
     title: "Valentin Silvestre - Symfony & Sylius Developer",
-    description: "Explore the portfolio of Valentin Silvestre, a Symfony & Sylius developer! See my latest projects in e-commerce, B2B, and open-source contributions.",
+    description:
+      "Explore the portfolio of Valentin Silvestre, a Symfony & Sylius developer! See my latest projects in e-commerce, B2B, and open-source contributions.",
     images: [
       {
         url: profilePic.src,
@@ -31,9 +32,9 @@ export const metadata = {
       },
     ],
     locale: "en_US",
-    alternateLocale: ['fr_FR'],
+    alternateLocale: ["fr_FR"],
   },
-    twitter: {
+  twitter: {
     card: "summary_large_image",
     title: "Valentin Silvestre - Symfony & Sylius Developer",
     description: "Explore the portfolio of Valentin Silvestre...",
@@ -44,88 +45,87 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-   icon: '/favicon.ico'
+  icon: "/favicon.ico",
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Valentin Silvestre",
-  "jobTitle": "Symfony & Sylius Developer",
-  "email": "[email address removed]",
-  "address": {
+  name: "Valentin Silvestre",
+  jobTitle: "Symfony & Sylius Developer",
+  email: "[email address removed]",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Lille",  // Updated based on LinkedIn
-    "addressRegion": "Hauts-de-France", // Updated based on LinkedIn
-    "addressCountry": "FR"  // Updated based on LinkedIn and general context
+    addressLocality: "Lille", // Updated based on LinkedIn
+    addressRegion: "Hauts-de-France", // Updated based on LinkedIn
+    addressCountry: "FR", // Updated based on LinkedIn and general context
   },
-  "url": "https://vasilvestre.github.io/",
-  "sameAs": [
+  url: "https://vasilvestre.github.io/",
+  sameAs: [
     "https://github.com/vasilvestre",
     "https://www.linkedin.com/in/valentin-silvestre-dev/", // Corrected URL
     "https://twitter.com/ValentinSilves",
-    "https://bsky.app/profile/vasilvestre.bsky.social"
+    "https://bsky.app/profile/vasilvestre.bsky.social",
   ],
-  "description": "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.", // Updated description
-  "hasOccupation": {
+  description:
+    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.", // Updated description
+  hasOccupation: {
     "@type": "Occupation",
-    "name": "Symfony & Sylius Developer",
-    "skills": "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B" // Expanded and refined skills list
+    name: "Symfony & Sylius Developer",
+    skills:
+      "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B", // Expanded and refined skills list
   },
-  "hasCredential": {
+  hasCredential: {
     "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "Master's Degree in Computer Science",
-    "recognizedBy": {
+    credentialCategory: "Master's Degree in Computer Science",
+    recognizedBy: {
       "@type": "EducationalOrganization",
-      "name": "Université Catholique de Lille",
-      "url": "https://www.univ-catholille.fr/"
+      name: "Université Catholique de Lille",
+      url: "https://www.univ-catholille.fr/",
     },
-    "validFrom": "2016-09"
+    validFrom: "2016-09",
   },
-  "worksFor": {
+  worksFor: {
     "@type": "Organization",
-    "name": "Akawaka",
-    "url": "https://www.akawaka.fr/"
+    name: "Akawaka",
+    url: "https://www.akawaka.fr/",
   },
-  "projectList": {
-        "@context": "https://schema.org/",
-        "@type": "ItemList",
-        "itemListElement":[
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item":
-            {
-              "@type": "WebSite",
-              "url": "https://vasilvestre.github.io/profiler-slides/1",
-              "name": "The State of PHP Profilers in 2024",
-              "description": "Slides for my presentation at AFUP Day Lille 2024."
-            }
-          },
-           {
-            "@type": "ListItem",
-            "position": 2,
-            "item":
-            {
-              "@type": "WebSite",
-              "url": "https://vasilvestre.github.io/foundry-slides/1",
-              "name": "Creating Expressive Fixtures with Foundry",
-              "description": "Slides from my presentation at Lille Symfony Meetup, June 2023."
-            }
-          },
-           {
-            "@type": "ListItem",
-            "position": 3,
-            "item":
-            {
-              "@type": "WebSite",
-              "url": "https://vasilvestre.github.io/extending-sylius-1.12-09-22/1",
-              "name": "How to properly extend Sylius API at 1.12",
-              "description": "Slides from my presentation at Lille Tech Meetup, September 2022."
-            }
-          }
-        ]
-    }
+  projectList: {
+    "@context": "https://schema.org/",
+    "@type": "ItemList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        item: {
+          "@type": "WebSite",
+          url: "https://vasilvestre.github.io/profiler-slides/1",
+          name: "The State of PHP Profilers in 2024",
+          description: "Slides for my presentation at AFUP Day Lille 2024.",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        item: {
+          "@type": "WebSite",
+          url: "https://vasilvestre.github.io/foundry-slides/1",
+          name: "Creating Expressive Fixtures with Foundry",
+          description: "Slides from my presentation at Lille Symfony Meetup, June 2023.",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        item: {
+          "@type": "WebSite",
+          url: "https://vasilvestre.github.io/extending-sylius-1.12-09-22/1",
+          name: "How to properly extend Sylius API at 1.12",
+          description: "Slides from my presentation at Lille Tech Meetup, September 2022.",
+        },
+      },
+    ],
+  },
 };
 
 export default function Home() {
@@ -401,7 +401,10 @@ export default function Home() {
                   >
                     <span className="sr-only">BlueSky</span>
                     <svg width="600" height="530" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                     <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" fill="#1185fe"/>
+                      <path
+                        d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
+                        fill="#1185fe"
+                      />
                     </svg>
 
                     <p>BlueSky</p>
