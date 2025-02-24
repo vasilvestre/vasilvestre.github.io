@@ -13,15 +13,16 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   ...baseMetadata,
-  title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+  title: "Valentin Silvestre - Symfony & Sylius Developer",
   description:
-    "Symfony & Sylius developer in France, passionate about quality, open source, and cool mulets. Currently employed at Akawaka.",
+    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.",
   keywords:
     "Symfony, Sylius, PHP, Developer, Freelance, France, Lille, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
   openGraph: {
     url: "https://vasilvestre.github.io/",
     type: "website",
-    title: "Valentin SILVESTRE - Symfony & Sylius Developer",
+    title: "Valentin Silvestre - Symfony & Sylius Developer",
+    description: "Explore the portfolio of Valentin Silvestre, a Symfony & Sylius developer! See my latest projects in e-commerce, B2B, and open-source contributions.",
     images: [
       {
         url: profilePic.src,
@@ -30,34 +31,103 @@ export const metadata = {
       },
     ],
     locale: "en_US",
+    alternateLocale: ['fr_FR'],
+  },
+    twitter: {
+    card: "summary_large_image",
+    title: "Valentin Silvestre - Symfony & Sylius Developer",
+    description: "Explore the portfolio of Valentin Silvestre...",
+    images: [profilePic.src],
+    site: "@ValentinSilves",
+    creator: "@ValentinSilves",
   },
   alternates: {
     canonical: "/",
   },
+   icon: '/favicon.ico'
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  name: metadata.title,
-  description: metadata.description,
-  author: {
-    "@type": "Person",
-    name: "Valentin Silvestre",
-    url: "https://vasilvestre.github.io/",
+  "@type": "Person",
+  "name": "Valentin Silvestre",
+  "jobTitle": "Symfony & Sylius Developer",
+  "email": "[email address removed]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lille",  // Updated based on LinkedIn
+    "addressRegion": "Hauts-de-France", // Updated based on LinkedIn
+    "addressCountry": "FR"  // Updated based on LinkedIn and general context
   },
-  breadcrumb: {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://vasilvestre.github.io/",
-      },
-    ],
+  "url": "https://vasilvestre.github.io/",
+  "sameAs": [
+    "https://github.com/vasilvestre",
+    "https://www.linkedin.com/in/valentin-silvestre-dev/", // Corrected URL
+    "https://twitter.com/ValentinSilves",
+    "https://bsky.app/profile/vasilvestre.bsky.social"
+  ],
+  "description": "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.", // Updated description
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Symfony & Sylius Developer",
+    "skills": "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B" // Expanded and refined skills list
   },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Master's Degree in Computer Science",
+    "recognizedBy": {
+      "@type": "EducationalOrganization",
+      "name": "Université Catholique de Lille",
+      "url": "https://www.univ-catholille.fr/"
+    },
+    "validFrom": "2016-09"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Akawaka",
+    "url": "https://www.akawaka.fr/"
+  },
+  "projectList": {
+        "@context": "https://schema.org/",
+        "@type": "ItemList",
+        "itemListElement":[
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+            {
+              "@type": "WebSite",
+              "url": "https://vasilvestre.github.io/profiler-slides/1",
+              "name": "The State of PHP Profilers in 2024",
+              "description": "Slides for my presentation at AFUP Day Lille 2024."
+            }
+          },
+           {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+            {
+              "@type": "WebSite",
+              "url": "https://vasilvestre.github.io/foundry-slides/1",
+              "name": "Creating Expressive Fixtures with Foundry",
+              "description": "Slides from my presentation at Lille Symfony Meetup, June 2023."
+            }
+          },
+           {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+            {
+              "@type": "WebSite",
+              "url": "https://vasilvestre.github.io/extending-sylius-1.12-09-22/1",
+              "name": "How to properly extend Sylius API at 1.12",
+              "description": "Slides from my presentation at Lille Tech Meetup, September 2022."
+            }
+          }
+        ]
+    }
 };
+
 export default function Home() {
   return (
     <main className="bg-inherit">
