@@ -37,7 +37,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Valentin Silvestre | Symfony & Sylius Developer in France",
-    description: "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
+    description:
+      "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
     images: [profilePic.src],
     site: "@ValentinSilves",
     creator: "@ValentinSilves",
