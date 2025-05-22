@@ -13,17 +13,17 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   ...baseMetadata,
-  title: "Valentin Silvestre - Symfony & Sylius Developer",
+  title: "Valentin Silvestre | Symfony & Sylius Developer in France",
   description:
-    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.",
+    "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
   keywords:
-    "Symfony, Sylius, PHP, Developer, Freelance, France, Lille, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
+    "Symfony developer, Sylius developer, PHP developer, France, Lille, e-commerce developer, B2B developer, B2C developer, open source contributor, technical speaker, web developer, Symfony, Sylius, PHP, Mulet, Quality, Open Source, E-commerce, B2C, B2B",
   openGraph: {
     url: "https://vasilvestre.github.io/",
     type: "website",
-    title: "Valentin Silvestre - Symfony & Sylius Developer",
+    title: "Valentin Silvestre | Symfony & Sylius Developer in France",
     description:
-      "Explore the portfolio of Valentin Silvestre, a Symfony & Sylius developer! See my latest projects in e-commerce, B2B, and open-source contributions.",
+      "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
     images: [
       {
         url: profilePic.src,
@@ -36,8 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valentin Silvestre - Symfony & Sylius Developer",
-    description: "Explore the portfolio of Valentin Silvestre...",
+    title: "Valentin Silvestre | Symfony & Sylius Developer in France",
+    description:
+      "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
     images: [profilePic.src],
     site: "@ValentinSilves",
     creator: "@ValentinSilves",
@@ -48,12 +49,20 @@ export const metadata = {
   icon: "/favicon.ico",
 };
 
-const jsonLd = {
+const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Valentin Silvestre",
   jobTitle: "Symfony & Sylius Developer",
   email: "[email address removed]",
+  nationality: {
+    "@type": "Country",
+    name: "France",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "University Catholique de Lille",
+  },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lille", // Updated based on LinkedIn
@@ -68,9 +77,33 @@ const jsonLd = {
     "https://bsky.app/profile/vasilvestre.bsky.social",
   ],
   description:
-    "Symfony & Sylius developer based in Lille, France.  Passionate about code quality, open-source contributions, and e-commerce. Currently employed at Akawaka, specializing in B2C and B2B solutions.",
-  skills:
-    "PHP, Symfony, Sylius, API Platform, JavaScript, HTML, CSS, Git, GitHub, SQL, MySQL,  Testing (PHPUnit, PHPSpec, Behat), Continuous Integration, Docker, E-commerce, B2C, B2B",
+    "Valentin Silvestre is an experienced Symfony and Sylius developer based in France, specializing in e-commerce solutions and open source contributions. Contact him for your next project!",
+  knowsAbout: [
+    "Symfony",
+    "Sylius",
+    "PHP",
+    "PHP Development",
+    "Web Development",
+    "E-commerce Solutions",
+    "B2B",
+    "B2C",
+    "API Platform",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Git",
+    "GitHub",
+    "SQL",
+    "MySQL",
+    "Testing",
+    "PHPUnit",
+    "PHPSpec",
+    "Behat",
+    "Continuous Integration",
+    "Docker",
+    "Open Source Contribution",
+    "Technical Speaking",
+  ],
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "Master's Degree in Computer Science",
@@ -124,6 +157,22 @@ const jsonLd = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  url: "https://vasilvestre.github.io/",
+  name: "Valentin Silvestre - Symfony & Sylius Developer Portfolio",
+  author: {
+    "@type": "Person",
+    name: "Valentin Silvestre",
+  },
+  description:
+    "Portfolio website of Valentin Silvestre, a Symfony and Sylius developer from France, showcasing his work, expertise in e-commerce, and contributions to open source.",
+  keywords: "Symfony developer, Sylius developer, PHP developer, France, e-commerce, open source",
+};
+
+const jsonLd = [personJsonLd, websiteJsonLd];
+
 export default function Home() {
   return (
     <main className="bg-inherit">
@@ -136,13 +185,15 @@ export default function Home() {
                 <div className="flex gap-x-3 justify-center lg:justify-start">
                   <ExportedImage
                     src={littleBobPic}
-                    alt="bob hat logo that illustrate my profile picture"
+                    alt="Valentin Silvestre, Symfony & Sylius Developer - Profile Picture (Bob Hat Logo)"
                     className="w-10 h-full hidden md:block"
                     priority
                     width={40}
                     height={40}
                   />
-                  <h1 className="text-4xl font-extrabold tracking-tight text-beige">Valentin Silvestre</h1>
+                  <h1 className="text-4xl font-extrabold tracking-tight text-beige">
+                    Valentin Silvestre - Symfony & Sylius Developer
+                  </h1>
                 </div>
                 <p className="mt-6 text-xl text-beige">
                   Symfony & Sylius developer, working from France. Interested in quality, open source & mulet.
@@ -162,7 +213,7 @@ export default function Home() {
             </div>
             <ExportedImage
               src={profilePic}
-              alt="photo de valentin silvestre"
+              alt="Valentin Silvestre, French Symfony & Sylius Developer"
               height={profilePic.height}
               width={profilePic.width}
               className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
@@ -173,11 +224,14 @@ export default function Home() {
       </section>
       <section className="relative bg-beige py-16 sm:py-24 lg:py-24">
         <div className="mx-auto flex flex-col items-center justify-center inset-0 max-w-md px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="mt-2 font-extrabold tracking-tight text-dark-blue text-4xl md:text-3xl">Who is Valentin ?</h2>
+          <h2 className="mt-2 font-extrabold tracking-tight text-dark-blue text-4xl md:text-3xl">
+            Who is Valentin Silvestre?
+          </h2>
           <p className="mx-auto mt-5 max-w-[45ch] text-xl text-blue text-left">
             I attended the University Catholique de Lille in France and earned a Master&apos;s degree in Computer
-            Science. Following that, I have worked as a Symfony developer in various companies, with a focus on
-            e-commerce, B2C, and B2B industries. Currently, I am employed by Akawaka as a Sylius developer.
+            Science. Following that, I have worked as a <strong>professional Symfony developer</strong> in various
+            companies, focusing on <strong>robust e-commerce solutions</strong> for both B2C and B2B industries.
+            Currently, I am employed by Akawaka as a <strong>Sylius developer</strong>.
           </p>
         </div>
       </section>
@@ -186,8 +240,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-32 sm:px-6 lg:px-8">
           <div className="bg-beige/50 p-20 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl">
             <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-dark-blue md:text-3xl">
-              What does Valentin do ?
+              What does Valentin do as a Symfony & Sylius Developer?
             </h2>
+            <p className="mt-5 text-xl text-blue">
+              As a dedicated <strong>Symfony and Sylius developer based in France</strong>, my primary focus is on
+              building high-quality, scalable <strong>web applications</strong> and{" "}
+              <strong>e-commerce platforms</strong>. I leverage my expertise in <strong>PHP development</strong> to
+              deliver efficient solutions for businesses. I am also a keen <strong>open source contributor</strong> and
+              enjoy sharing my knowledge through <strong>technical speaking</strong> engagements at conferences and
+              meetups.
+            </p>
             <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">Technologies</h2>
             <div className="mt-4">
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -197,7 +259,7 @@ export default function Home() {
                       <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage
                           src={phpTextSvg}
-                          alt="PHP logo"
+                          alt="PHP logo - Technology used by Valentin Silvestre"
                           placeholder={null}
                           className="h-10 w-10"
                           width={10}
@@ -206,7 +268,8 @@ export default function Home() {
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">PHP</h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        The undying technology that I&apos;ve been using since 15 years old.
+                        PHP: My foundational technology for over 15 years, forming the backbone of my{" "}
+                        <strong>PHP development</strong> work.
                       </p>
                     </div>
                   </div>
@@ -218,7 +281,7 @@ export default function Home() {
                       <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage
                           src={symfonyTextSvg}
-                          alt="Symfony logo"
+                          alt="Symfony framework logo - Expertise of Valentin Silvestre"
                           className="h-10 w-10"
                           width={10}
                           height={10}
@@ -227,7 +290,8 @@ export default function Home() {
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        Since 2016 I have been working with Symfony. I also made a few contributions to the framework.
+                        Symfony: Since 2016, I&apos;ve specialized as a <strong>Symfony developer</strong>, creating
+                        complex applications and contributing back to the <strong>open source framework</strong>.
                       </p>
                     </div>
                   </div>
@@ -237,19 +301,25 @@ export default function Home() {
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
                       <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
-                        <ExportedImage src={syliusIconSvg} alt="Sylius logo" className="h-10 w-fit" />
+                        <ExportedImage
+                          src={syliusIconSvg}
+                          alt="Sylius e-commerce framework logo - Expertise of Valentin Silvestre"
+                          className="h-10 w-fit"
+                        />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Sylius</h2>
                       <p className="mt-5 text-base text-blue font-semibold">
-                        Top e-commerce framework for Symfony. I have been working with Sylius since 2019 on various
-                        projects.
+                        Sylius: As a <strong>Sylius developer</strong> since 2019, I build tailored{" "}
+                        <strong>e-commerce solutions</strong> on this leading Symfony-based framework.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">Conferences</h2>
+            <h2 className="mt-8 text-2xl font-extrabold tracking-tight text-dark-blue">
+              Conference Talks & Contributions
+            </h2>
             <div className="mt-4">
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div className="pt-6 flex-row">
@@ -317,11 +387,13 @@ export default function Home() {
             <div className="mx-auto max-w-md sm:max-w-3xl items-center lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-9 xl:gap-48">
               <ExportedImage
                 src={contactPic}
-                alt="pic of me pointing the camera with my fingers"
+                alt="Valentin Silvestre - Contact me for Symfony/Sylius development"
                 className="mx-auto rounded-full border-4 border-b-8 border-beige w-72 h-full lg:w-96"
               />
               <div className="mt-12 lg:mt-0">
-                <h2 className="text-4xl font-extrabold text-beige md:text-3xl">Contact Me !</h2>
+                <h2 className="text-4xl font-extrabold text-beige md:text-3xl">
+                  Contact Valentin for Web Development Projects
+                </h2>
 
                 <div className="mt-12">
                   <p className="mb-6 text-base text-beige">
