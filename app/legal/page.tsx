@@ -7,7 +7,7 @@ export const metadata = {
 const inter = Inter({ subsets: ["latin"] });
 export default function Page() {
   return (
-    <main className="relative bg-gradient-to-b from-green-tree to-blue">
+    <main className="relative bg-linear-to-b from-green-tree to-blue">
       <section className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl py-10 md:py-20">
         <Link href={"/"} className={"text-lg text-beige"}>
           Return to the home page

@@ -46,7 +46,6 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-  icon: "/favicon.ico",
 };
 
 const personJsonLd = {
@@ -177,7 +176,7 @@ export default function Home() {
   return (
     <main className="bg-inherit">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative bg-gradient-to-b from-green-tree to-blue">
+      <section className="relative bg-linear-to-b from-green-tree to-blue">
         <div className="overflow-hidden lg:relative py-12 lg:py-24">
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 gap-y-12 flex flex-wrap justify-center items-center">
             <div className="text-center lg:text-left">
@@ -199,16 +198,25 @@ export default function Home() {
                   Symfony & Sylius developer, working from France. Interested in quality, open source & mulet.
                 </p>
               </div>
-              <div className="mt-12 flex justify-center lg:justify-start">
+              <div className="mt-12 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
                   href="#contact"
                   className="
-                   text-center block w-2/4 rounded-br-2xl rounded-tl-2xl border border-transparent px-5 py-3 bg-beige
+                   text-center block rounded-br-2xl rounded-tl-2xl border border-transparent px-5 py-3 bg-beige
                    text-base text-green-tree shadow hover:text-beige hover:bg-green-tree focus:border-2 focus:border-beige sm:px-10 font-semibold
                    "
                 >
                   Contact me !
                 </a>
+                <Link
+                  href="/blog"
+                  className="
+                   text-center block rounded-br-2xl rounded-tl-2xl border-2 border-beige px-5 py-3 bg-transparent
+                   text-base text-beige shadow hover:text-green-tree hover:bg-beige focus:border-2 focus:border-beige sm:px-10 font-semibold
+                   "
+                >
+                  Visit my blog
+                </Link>
               </div>
             </div>
             <ExportedImage
@@ -256,7 +264,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage
                           src={phpTextSvg}
                           alt="PHP logo - Technology used by Valentin Silvestre"
@@ -278,7 +286,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage
                           src={symfonyTextSvg}
                           alt="Symfony framework logo - Expertise of Valentin Silvestre"
@@ -300,7 +308,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         <ExportedImage
                           src={syliusIconSvg}
                           alt="Sylius e-commerce framework logo - Expertise of Valentin Silvestre"
@@ -325,7 +333,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center text-white rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center text-white rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         May 2024 - AFUP Day Lille
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
@@ -343,7 +351,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center text-white justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center text-white justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         June 2023 - Lille Symfony Meetup
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
@@ -361,7 +369,7 @@ export default function Home() {
                 <div className="pt-6 flex-row">
                   <div className="flow-root rounded-tl-3xl rounded-br-3xl bg-beige px-6 pb-8 relative">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center text-white justify-center rounded-md bg-gradient-to-r from-green-tree to-blue p-3 shadow-lg">
+                      <div className="inline-flex items-center text-white justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         September 2022 - Lille Tech Meetup
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
@@ -381,7 +389,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="bg-gradient-to-t from-green-tree to-blue relative">
+      <section id="contact" className="bg-linear-to-t from-green-tree to-blue relative">
         <div className="relative mx-auto max-w-7xl ml-auto px-4 py-12 px-6 lg:px-8 lg:py-24">
           <div className="px-6 xl:px-10 rounded-lg text-center relative">
             <div className="mx-auto max-w-md sm:max-w-3xl items-center lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-9 xl:gap-48">
