@@ -268,7 +268,7 @@ export default function Home() {
                         <ExportedImage
                           src={phpTextSvg}
                           alt="PHP logo - Technology used by Valentin Silvestre"
-                          placeholder={null}
+                          placeholder="empty"
                           className="h-10 w-10"
                           width={10}
                           height={10}
@@ -293,7 +293,7 @@ export default function Home() {
                           className="h-10 w-10"
                           width={10}
                           height={10}
-                          placeholder={null}
+                          placeholder="empty"
                         />
                       </div>
                       <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h2>

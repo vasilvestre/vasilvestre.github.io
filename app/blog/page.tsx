@@ -86,7 +86,7 @@ export default async function Page() {
                 {excerpt && <p className="text-dark-blue mb-4 leading-relaxed">{excerpt}</p>}
 
                 <Link
-                  href={`/posts/${post.node._sys.filename}`}
+                  href={`/blog/${post.node._sys.filename}`}
                   className="inline-flex items-center text-dark-blue hover:text-green-tree font-medium transition-colors duration-200"
                 >
                   Read more
