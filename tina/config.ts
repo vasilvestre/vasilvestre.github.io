@@ -17,7 +17,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "assets/images/blog",
       publicFolder: "public",
     },
   },
@@ -35,6 +35,12 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            type: "image",
+            name: "featuredImage",
+            label: "Featured Image",
+            required: false,
           },
           {
             type: "datetime",

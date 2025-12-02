@@ -1,5 +1,22 @@
 import { client } from "../../tina/__generated__/client";
 import Link from "next/link";
+import type { Metadata } from "next";
+import { baseMetadata } from "@/app/shared-metadata";
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  title: "Blog",
+  description: "Articles et réflexions sur le développement web, PHP, Symfony et Sylius par Valentin Silvestre.",
+  openGraph: {
+    ...baseMetadata.openGraph,
+    title: "Blog | Valentin Silvestre",
+    description: "Articles et réflexions sur le développement web, PHP, Symfony et Sylius par Valentin Silvestre.",
+    url: "/blog",
+  },
+  alternates: {
+    canonical: "/blog",
+  },
+};
 
 // Helper function to extract plain text from rich text content
 function extractTextFromRichText(richText: any): string {
