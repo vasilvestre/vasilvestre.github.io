@@ -72,7 +72,7 @@ const ContentBlock = ({ content }: { content: any }) => {
         </div>
       </div>
       <div className="relative px-4 sm:px-6 lg:px-8">
-        <div className="text-lg max-w-prose mx-auto">
+        <div className="prose prose-lg max-w-prose mx-auto">
           <TinaMarkdown components={components} content={content} />
         </div>
       </div>

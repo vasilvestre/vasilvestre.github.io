@@ -8,7 +8,7 @@ updatedAt: 2025-12-19T00:00:00.000Z
 
 Pour ce premier article, j'aimerais partager un sujet dont je parle régulièrement, que ce soit auprès de [l'AFUP](https://afup.org/) en meetup ou sur mes réseaux.
 
-L'époque où l'IA n'était qu'une simple autocomplétion améliorée n'est pas si loin derrière nous et pourtant. 
+L'époque où l'IA n'était qu'une simple autocomplétion améliorée n'est pas si loin derrière nous et pourtant.
 
 Aujourd'hui, mon flux de travail repose sur un écosystème d'agents et de protocoles qui me permettent de me concentrer sur l'architecture et la valeur métier. Ma capacité mentale passe moins dans l'écriture du code et plus dans un code avec de la valeur.
 
@@ -16,12 +16,9 @@ Aujourd'hui, mon flux de travail repose sur un écosystème d'agents et de proto
 
 Je n'utilise désormais plus mon IDE 7h par jour, j'utilise désormais l'outil [OpenCode](https://github.com/sst/opencode), un logiciel CLI opensource permettant de se connecter à n'importe quel provider (OpenAI, Github Copitlot, Claude…) et d'utiliser les modèles de son choix.
 
-
-Mon écosystème MCP
-------------------
+## Mon écosystème MCP
 
 J'utilise plusieurs MCP activement en cette fin d'année, seuls eux font partis de 100% de mes workflows.
-
 
 | Nom        | Usage                        | Pourquoi je l'utilise                                                                                                                                                                                                       |
 | ---------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,10 +44,14 @@ Pour mes projets persos, j'utilise Spec-Kit. C'est très rigoureux : on définit
 
 Sur mes projets professionnels existants, OpenSpec est plus agile. Il me permet de proposer des changements (/openspec:proposal) sur une base de code PHP déjà là, de valider l'impact, et de laisser l'IA appliquer les modifications de manière granulaire. Il est moins “contrariant” que Spec-kit et me permet d'itérer plus vite, ce que j'apprécie mieux.
 
+## Mes plugins opencode
+
+Je n'utilise qu'un seul plugin, de son nom [“opencode synamic context pruning”](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning), qui permet de retirer de la discussion les outputs des outils appelés durant l'éxécution de mon contexte, ce qui l'allège et évite de compacter trop souvent.
+
+
 ## Conclusion
 
 Cette année, je me suis réconcilié avec mon métier. Je suis devenu las d'écrire du code, de perdre 4h pour rédiger du code bateau, 50 tests pour une feature et de ne pas avoir la capacité mentale de remettre en question la structure de mon code tellement j'étais fatigué d'écrire du code.
-
 
 Désormais, je suis l'orchestre de mes outils, j'écris encore du code bien évidemment mais moins, avec plus de valeur, sur des sujets plus complexes et qui me passionne.
 
