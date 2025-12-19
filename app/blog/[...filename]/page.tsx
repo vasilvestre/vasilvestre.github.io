@@ -77,32 +77,34 @@ export async function generateMetadata({
   const bodyText = extractTextFromRichText(post.body);
   const excerpt = createExcerpt(bodyText);
 
-  // Build OpenGraph images array if featured image exists
-  const openGraphImages = post.featuredImage ? [{ url: post.featuredImage, alt: post.title }] : undefined;
+  // Build OpenGraph image - use featured image if exists, otherwise default portrait
+  const ogImage = post.featuredImage || "/assets/images/portrait-valentin.webp";
 
   return {
     ...baseMetadata,
     title: post.title,
     description: excerpt,
     openGraph: {
-      type: "article",
+      ...baseMetadata.openGraph,
       title: post.title,
       description: excerpt,
-      locale: "fr_FR",
-      publishedTime: post.date,
-      ...(post.updatedAt && { modifiedTime: post.updatedAt }),
-      authors: ["Valentin Silvestre"],
-      url: `/blog/${filename}`,
-      ...(openGraphImages && { images: openGraphImages }),
+      type: "article",
+      url: `https://vasilvestre.com/blog/${filename}`,
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
-      card: post.featuredImage ? "summary_large_image" : "summary",
+      ...baseMetadata.twitter,
+      card: "summary_large_image",
       title: post.title,
       description: excerpt,
-      ...(post.featuredImage && { images: [post.featuredImage] }),
-    },
-    alternates: {
-      canonical: `/blog/${filename}`,
+      images: [ogImage],
     },
   };
 }
