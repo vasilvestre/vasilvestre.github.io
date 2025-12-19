@@ -1,7 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
-import profilePic from "/assets/images/portrait-valentin.webp";
+import profilePic from "../public/assets/images/portrait-valentin.webp";
 import { baseMetadata } from "./shared-metadata";
 
 export const metadata = baseMetadata;
