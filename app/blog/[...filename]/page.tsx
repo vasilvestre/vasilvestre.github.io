@@ -55,7 +55,7 @@ function createExcerpt(text: string, maxLength: number = 155): string {
 
 export async function generateStaticParams() {
   const pages = await client.queries.postConnection();
-  const paths = pages.data?.postConnection?.edges?.map((edge) => ({
+  const paths = pages.data?.postConnection?.edges?.map((edge: any) => ({
     filename: edge?.node?._sys.breadcrumbs,
   }));
 

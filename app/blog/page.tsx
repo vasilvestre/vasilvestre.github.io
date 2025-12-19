@@ -73,7 +73,7 @@ export default async function Page() {
 
       {data.postConnection?.edges && data.postConnection.edges.length > 0 ? (
         <div className="space-y-8">
-          {data.postConnection.edges.map((post) => {
+          {data.postConnection.edges.map((post: any) => {
             if (!post?.node) return null;
 
             const bodyText = extractTextFromRichText(post.node.body);
