@@ -46,7 +46,7 @@ Sur mes projets professionnels existants, OpenSpec est plus agile. Il me permet 
 
 ## Mes plugins opencode
 
-Je n'utilise qu'un seul plugin, de son nom [“opencode synamic context pruning”](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning), qui permet de retirer de la discussion les outputs des outils appelés durant l'éxécution de mon contexte, ce qui l'allège et évite de compacter trop souvent.
+Je n'utilise qu'un seul plugin, de son nom [“opencode synamic context pruning”](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning), qui permet de retirer de la discussion les outputs des outils appelés durant l'exécution de mon contexte, ce qui l'allège et évite de compacter trop souvent.
 
 ## Conclusion
 
