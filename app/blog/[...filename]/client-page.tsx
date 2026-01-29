@@ -28,16 +28,12 @@ export default function Post(props: ClientPageProps) {
         ← Blog
       </Link>
 
-      <div
-        style={{
-          textAlign: "center",
-        }}
-      >
-        <h1 className="text-2xl mb-6 text-center leading-7 font-bold tracking-tight text-gray-900 sm:text-3xl">
+      <div className="text-center">
+        <h1 className="text-2xl mb-6 leading-7 font-bold tracking-tight text-gray-900 sm:text-3xl">
           {data.post.title}
         </h1>
-        <ContentBlock content={data.post.body}></ContentBlock>
       </div>
+      <ContentBlock content={data.post.body}></ContentBlock>
     </>
   );
 }
