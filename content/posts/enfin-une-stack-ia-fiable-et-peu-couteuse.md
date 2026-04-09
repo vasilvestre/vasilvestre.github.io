@@ -48,3 +48,57 @@ J'utilise [https://skills.sh/](https://skills.sh/) pour naviguer dans la liste d
 Ce standard permet d'installer facilement des skills sur sa machine et/ou dans le projet que l'on utilise (pour les partager).
 
 Pour donner un exemple, un skill permet de construire des skills soit même et un autre permet de configurer Sentry SDK sur son projet PHP. Ce dernier est partagé par Sentry et met donc en avant les meilleures pratiques ! 
+
+### A quoi ressemble ma configuration oh-my-openagent 
+
+```
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "categories": {
+    "quick": {
+      "model": "zai-coding-plan/glm-5-flash",
+      "fallbackChain": [
+        { "providers": ["zai-coding-plan"], "model": "glm-5-flash" },
+        { "providers": ["github-copilot"], "model": "gpt-5-mini" },
+        { "providers": ["opencode"], "model": "gpt-5-nano" }
+      ]
+    },
+    
+    "ultrabrain": {
+      "model": "zai-coding-plan/glm-5.1",
+      "fallbackChain": [
+        { "providers": ["github-copilot"], "model": "gpt-5.2-codex" },
+        { "providers": ["github-copilot"], "model": "gpt-5.2" },
+        { "providers": ["opencode"], "model": "kimi-k2.5-free" }
+      ]
+    },
+    
+    "deep": {
+      "model": "zai-coding-plan/glm-5.1",
+      "fallbackChain": [
+        { "providers": ["github-copilot"], "model": "claude-sonnet-4.5" },
+        { "providers": ["github-copilot"], "model": "gpt-5.2" },
+        { "providers": ["zai-coding-plan"], "model": "glm-5" }
+      ]
+    },
+    
+    "visual-engineering": {
+      "model": "zai-coding-plan/glm-5v-turbo",
+      "fallbackChain": [
+        { "providers": ["github-copilot"], "model": "gemini-3-pro-preview" },
+        { "providers": ["google"], "model": "gemini-2.5-pro" },
+        { "providers": ["github-copilot"], "model": "claude-sonnet-4.5" }
+      ]
+    },
+    
+    "writing": {
+      "model": "zai-coding-plan/glm-5-flash",
+      "fallbackChain": [
+        { "providers": ["github-copilot"], "model": "gemini-3-flash-preview" },
+        { "providers": ["zai-coding-plan"], "model": "glm-5-flash" },
+        { "providers": ["opencode"], "model": "kimi-k2.5-free" }
+      ]
+    }
+  }
+}
+```
