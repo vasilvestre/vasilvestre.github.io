@@ -1,6 +1,6 @@
 ---
 title: Enfin une stack IA fiable et peu coûteuse !
-date: 2026-04-15T00:00:00.000Z
+date: 2026-04-09T00:00:00.000Z
 ---
 
 ## Le roi est mort. Vive le roi !
@@ -49,16 +49,25 @@ Ce standard permet d'installer facilement des skills sur sa machine et/ou dans l
 
 Pour donner un exemple, un skill permet de construire des skills soit même et un autre permet de configurer Sentry SDK sur son projet PHP. Ce dernier est partagé par Sentry et met donc en avant les meilleures pratiques ! 
 
+## Mon workflow
+
+1. Je passe opencode en mode agent.
+2. Je demande à GLM 5.1 d'établir une tâche.
+   1. Des agents se lancent en fond pour explorer le projet, recherche le besoin, lire la documentation des solutions impliquées.
+3. L'agent plan me pose des questions si le sujet n'est pas précis puis me demande si je veux faire une review automatisé en profondeur de la tâche produite.
+4. Je lance le travail et l'agent de plan va continuer jusqu'à obtenir toutes les preuves de fonctionnements et remplir tout les objectifs via une boucle.
+5. J'interviens (parfois) durant et à la fin du processus pour relire, vérifier le bon fonctionnement et ajuster ce qui doit l'être.
+6. Je demande a opencode d'utiliser le skill “git master” pour commit proprement, il s'adapte de lui même au projet et produit des commits atomiques.
+
 ### A quoi ressemble ma configuration oh-my-openagent 
 
-```
+```json
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "categories": {
     "quick": {
       "model": "zai-coding-plan/glm-5-flash",
       "fallbackChain": [
-        { "providers": ["zai-coding-plan"], "model": "glm-5-flash" },
         { "providers": ["github-copilot"], "model": "gpt-5-mini" },
         { "providers": ["opencode"], "model": "gpt-5-nano" }
       ]
