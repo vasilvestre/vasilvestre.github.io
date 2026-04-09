@@ -67,13 +67,19 @@ function formatDate(dateString: string): string {
 export default async function Page() {
   const { data } = await client.queries.postConnection();
 
+  const sortedEdges = [...(data.postConnection?.edges ?? [])].sort((a: any, b: any) => {
+    const dateA = a?.node?.date ? new Date(a.node.date).getTime() : 0;
+    const dateB = b?.node?.date ? new Date(b.node.date).getTime() : 0;
+    return dateB - dateA;
+  });
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-beige mb-8">Blog Posts</h1>
 
-      {data.postConnection?.edges && data.postConnection.edges.length > 0 ? (
+      {sortedEdges.length > 0 ? (
         <div className="space-y-8">
-          {data.postConnection.edges.map((post: any) => {
+          {sortedEdges.map((post: any) => {
             if (!post?.node) return null;
 
             const bodyText = extractTextFromRichText(post.node.body);
