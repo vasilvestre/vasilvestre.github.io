@@ -1,18 +1,16 @@
 ---
 title: Enfin une stack IA fiable et peu coûteuse !
-date: 2026-04-09T00:00:00.000Z
+date: 2026-04-14T00:00:00.000Z
 ---
 
 ## Le roi est mort. Vive le roi !
 
+Je suis ENFIN parvenu à obtenir une tarification et des capacités qui comblent mes besoins.
+Lorsque je parle du roi, je parle d'Opus, le grand indétrônable qui demeure intelligent malgré son contexte large. Cet avantage vient avec l'inconvénient d'un prix important.
 
-Je suis ENFIN parvenu à obtenir une tarification et des capacités qui comblent mes besoins. 
-Lorsque je parle du roi, je parle d'Opus, le grand indétrônable qui demeure intelligent malgré son contexte large. Cette avantage vient avec l'inconvénient d'un prix important.
+Pour piloter intelligemment mon IA agentique à travers mes projets, j'utilise désormais GLM 5.1.
 
-Pour piloter intelligemment mon IA agentic à travers mes projets, j'utilise désormais GLM 5.1.
-
-
-Je vous avais déjà parlé de Z.AI [dans mon précédent post](https://vasilvestre.github.io/blog/Ma-stack-IA-en-janvier-2026---Adieu-Copilot-). Ils ont depuis sorti un modèle qui égalise et dépasse même parfois Opus dans certains domaines, pour un prix ridicule !
+Je vous avais déjà parlé de Z.AI [dans mon précédent post](https://vasilvestre.github.io/blog/Ma-stack-IA-en-janvier-2026---Adieu-Copilot-). Ils ont depuis sorti un modèle qui égale et dépasse même parfois Opus dans certains domaines, pour un prix ridicule !
 
 | Prix          | Opus | GLM 5.1 |
 | ------------- | ---- | ------- |
@@ -25,9 +23,9 @@ MTok = Million de tokens
 
 ### Un roi imparfait
 
-Malgré ses qualités, le modèle GLM 5.1 est relativement lent, autant en Tokens/s qu'en temps d'attente d'une réponse. A l'usage, il reste totalement fonctionnel et permet de travailler sans soucis.
+Malgré ses qualités, le modèle GLM 5.1 est relativement lent, autant en Tokens/s qu'en temps d'attente d'une réponse. À l'usage, il reste totalement fonctionnel et permet de travailler sans souci.
 
-J'utilise pour ma part l'offre de Z.AI comme provider, qui coûte 30€/mois pour l'offre pro dont je n'ai jamais atteint le quota, existant dans une fenêtre de 5 heures ([vous trouver ici un lien de parrainage](https://z.ai/subscribe?ic=TP2ZSTFE2R)).
+J'utilise pour ma part l'offre de Z.AI comme provider, qui coûte 30€/mois pour l'offre pro dont je n'ai jamais atteint le quota, existant dans une fenêtre de 5 heures ([vous trouverez ici un lien de parrainage](https://z.ai/subscribe?ic=TP2ZSTFE2R)).
 
 ## Evolution de l'usage
 
@@ -37,17 +35,16 @@ oh-my-opencode se nomme désormais [oh-my-agent](https://github.com/code-yeongyu
 
 > Skills are reusable capabilities for AI agents. They provide procedural knowledge that helps agents accomplish specific tasks more effectively. Think of them as plugins or extensions that enhance what your AI agent can do.
 
-En somme, un skill détecte des mots clefs et permettent de donner des instructions claires et précises concernant une tâche, sous forme de fichier markdown.
+En somme, un skill détecte des mots clefs et permet de donner des instructions claires et précises concernant une tâche, sous forme de fichier Markdown.
 
-
-Comme un agent mais dédié a des tâches précises ! Review de code, usage d'un framework, d'une librairie etc…
+Comme un agent mais dédié a des tâches précises ! Revue de code, usage d'un framework, d'une librairie etc…
 
 ## Comment tu les crées et utilises ?
 
-J'utilise [https://skills.sh/](https://skills.sh/) pour naviguer dans la liste des skills les plus maintenus et utilisés au quotidiens.
+J'utilise [https://skills.sh/](https://skills.sh/) pour naviguer dans la liste des skills les plus maintenus et utilisés au quotidien.
 Ce standard permet d'installer facilement des skills sur sa machine et/ou dans le projet que l'on utilise (pour les partager).
 
-Pour donner un exemple, un skill permet de construire des skills soit même et un autre permet de configurer Sentry SDK sur son projet PHP. Ce dernier est partagé par Sentry et met donc en avant les meilleures pratiques ! 
+Pour donner un exemple, un skill permet de construire des skills soi-même et un autre permet de configurer Sentry SDK sur son projet PHP. Ce dernier est partagé par Sentry et met donc en avant les meilleures pratiques !
 
 ## Mon workflow
 
@@ -59,7 +56,7 @@ Pour donner un exemple, un skill permet de construire des skills soit même et u
 5. J'interviens (parfois) durant et à la fin du processus pour relire, vérifier le bon fonctionnement et ajuster ce qui doit l'être.
 6. Je demande a opencode d'utiliser le skill “git master” pour commit proprement, il s'adapte de lui même au projet et produit des commits atomiques.
 
-### A quoi ressemble ma configuration oh-my-openagent 
+### A quoi ressemble ma configuration oh-my-openagent
 
 ```json
 {
@@ -111,3 +108,10 @@ Pour donner un exemple, un skill permet de construire des skills soit même et u
   }
 }
 ```
+
+Petit example, sur une journée j'ai dépensé 160M de tokens dont 55M dans une fenêtre de 5 heures avant d'avoir un soucis. Et cela est arrivé car GLM 5 consomme 3x plus de tokens pendant les heures de pointes.
+
+
+Cela n'est valide que durant la transition de leur technologie.
+
+J'espère que ce ticket de blog vous aura plu, n'hésitez pas à me contacter sur les réseaux ou à travers Akawaka.
