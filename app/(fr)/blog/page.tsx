@@ -1,4 +1,4 @@
-import { client } from "../../tina/__generated__/client";
+import { client } from "../../../tina/__generated__/client";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { baseMetadata } from "@/app/shared-metadata";

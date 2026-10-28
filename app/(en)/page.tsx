@@ -1,9 +1,9 @@
-import profilePic from "../public/assets/images/portrait-valentin.webp";
-import contactPic from "../public/assets/images/valentin-contact.webp";
-import littleBobPic from "../public/assets/images/bob.svg";
-import phpTextSvg from "../public/assets/images/php-text.svg";
-import symfonyTextSvg from "../public/assets/images/symfony-text.svg";
-import syliusIconSvg from "../public/assets/images/sylius-icon-white.svg";
+import profilePic from "../../public/assets/images/portrait-valentin.webp";
+import contactPic from "../../public/assets/images/valentin-contact.webp";
+import littleBobPic from "../../public/assets/images/bob.svg";
+import phpTextSvg from "../../public/assets/images/php-text.svg";
+import symfonyTextSvg from "../../public/assets/images/symfony-text.svg";
+import syliusIconSvg from "../../public/assets/images/sylius-icon-white.svg";
 
 import { Inter } from "next/font/google";
 import ExportedImage from "next-image-export-optimizer";
@@ -206,7 +206,7 @@ export default function Home() {
                    text-base text-green-tree shadow hover:text-beige hover:bg-green-tree focus:border-2 focus:border-beige sm:px-10 font-semibold
                    "
                 >
-                  Contact me !
+                  Contact me!
                 </a>
                 <Link
                   href="/blog"
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-what bg-no-repeat bg-cover bg-fixed">
+      <section className="bg-what bg-no-repeat bg-cover">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-32 sm:px-6 lg:px-8">
           <div className="bg-beige/50 p-20 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl">
             <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-dark-blue md:text-3xl">
@@ -274,7 +274,7 @@ export default function Home() {
                           height={10}
                         />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">PHP</h2>
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">PHP</h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         PHP: My foundational technology for over 15 years, forming the backbone of my{" "}
                         <strong>PHP development</strong> work.
@@ -296,7 +296,7 @@ export default function Home() {
                           placeholder="empty"
                         />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h2>
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Symfony</h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         Symfony: Since 2016, I&apos;ve specialized as a <strong>Symfony developer</strong>, creating
                         complex applications and contributing back to the <strong>open source framework</strong>.
@@ -315,7 +315,7 @@ export default function Home() {
                           className="h-10 w-fit"
                         />
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Sylius</h2>
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">Sylius</h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         Sylius: As a <strong>Sylius developer</strong> since 2019, I build tailored{" "}
                         <strong>e-commerce solutions</strong> on this leading Symfony-based framework.
@@ -336,9 +336,9 @@ export default function Home() {
                       <div className="inline-flex items-center justify-center text-white rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         May 2024 - AFUP Day Lille
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         The State of PHP Profilers in 2024
-                      </h2>
+                      </h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         <Link href={"https://vasilvestre.github.io/profiler-slides/1"} target={"_blank"}>
                           Find my slides here.
@@ -354,9 +354,9 @@ export default function Home() {
                       <div className="inline-flex items-center text-white justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         June 2023 - Lille Symfony Meetup
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         Creating Expressive Fixtures with Foundry
-                      </h2>
+                      </h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         <Link href={"https://vasilvestre.github.io/foundry-slides/1"} target={"_blank"}>
                           Find my slides here.
@@ -372,9 +372,9 @@ export default function Home() {
                       <div className="inline-flex items-center text-white justify-center rounded-md bg-linear-to-r from-green-tree to-blue p-3 shadow-lg">
                         September 2022 - Lille Tech Meetup
                       </div>
-                      <h2 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
+                      <h3 className="mt-6 text-lg font-medium tracking-tight text-dark-blue">
                         How to properly extend Sylius API at 1.12
-                      </h2>
+                      </h3>
                       <p className="mt-5 text-base text-blue font-semibold">
                         <Link href={"https://vasilvestre.github.io/extending-sylius-1.12-09-22/1"} target={"_blank"}>
                           Find my slides here.

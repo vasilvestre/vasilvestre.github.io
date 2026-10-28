@@ -1,16 +1,11 @@
-import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
-import profilePic from "../public/assets/images/portrait-valentin.webp";
-import { baseMetadata } from "./shared-metadata";
 
-export const metadata = baseMetadata;
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  let currentDate = new Date();
+export function SiteShell({ lang, children }: { lang: "en" | "fr"; children: React.ReactNode }) {
+  const currentDate = new Date();
 
   return (
-    <html lang="fr">
+    <html lang={lang}>
       <body className="bg-green-tree min-h-screen flex flex-col">
         <main className="grow">{children}</main>
         <Script

@@ -1,0 +1,24 @@
+# Valentin Silvestre
+
+> Développeur Symfony & Sylius basé en France, spécialisé en e-commerce (B2B/B2C), open source et conférences.
+
+Site personnel de Valentin Silvestre, développeur Symfony & Sylius chez Akawaka (Lille, France).
+
+## Pages principales
+
+- [Accueil](https://vasilvestre.github.io/): présentation, technologies (PHP, Symfony, Sylius), conférences, contact.
+- [Blog](https://vasilvestre.github.io/blog): articles en français sur le développement web, PHP, Symfony, Sylius et les outils IA.
+- [Mentions légales](https://vasilvestre.github.io/legal): crédits, copyright, politique de confidentialité.
+
+## Conférences
+
+- [The State of PHP Profilers in 2024](https://vasilvestre.github.io/profiler-slides/1) - AFUP Day Lille, mai 2024.
+- [Creating Expressive Fixtures with Foundry](https://vasilvestre.github.io/foundry-slides/1) - Lille Symfony Meetup, juin 2023.
+- [How to properly extend Sylius API at 1.12](https://vasilvestre.github.io/extending-sylius-1.12-09-22/1) - Lille Tech Meetup, septembre 2022.
+
+## Profils
+
+- [GitHub](https://github.com/vasilvestre/)
+- [LinkedIn](https://www.linkedin.com/in/valentin-silvestre-dev/)
+- [BlueSky](https://bsky.app/profile/vasilvestre.bsky.social)
+- [CV (JSON Resume)](https://registry.jsonresume.org/vasilvestre)

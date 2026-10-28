@@ -1,6 +1,6 @@
 "use client";
 import { useTina } from "tinacms/dist/react";
-import { PostQuery } from "../../../tina/__generated__/types";
+import { PostQuery } from "../../../../tina/__generated__/types";
 import { ContentBlock } from "@/components/blocks/ContentBlock";
 import Link from "next/link";
 
